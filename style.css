@@ -2,5 +2,13 @@ html {
     scroll-behavior: smooth; /* comportamento-da-rolagem: suave */
 }
 body {
-    color:rgb(215, 58, 89);
+    color:crimson;
+}
+
+h1 {
+    color: saddlebrown;
+    line-height: 2;
+    font-weight: bold;
+    font-size: 50pt;
+    font-family: 'Courier New', Courier, monospace;
 }
