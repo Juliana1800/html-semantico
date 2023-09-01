@@ -1,0 +1,6 @@
+html {
+    scroll-behavior: smooth; /* comportamento-da-rolagem: suave */
+}
+body {
+    color:rgb(215, 58, 89);
+}
