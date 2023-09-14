@@ -24,7 +24,7 @@ body {
     font-family: 'Courier New', Courier, monospace;
 }
    .titulo-do-artigo {
-   color:var(--cor-primaria);
+   color: var(--cor-primaria);
     line-height: 2;
     font-weight: bold;
     font-size: 22pt;
@@ -40,7 +40,7 @@ body {
 }
 
 .subtitulo-de-artigo {
-    color:var(--cor-terciaria);
+    color: var(--cor-terciaria);
     line-height: 2.0;
     font-size: 20pt;
     font-weight: bolder;
@@ -54,12 +54,21 @@ p {
 }
 
 .paragrafo-de-artigo {
-    background:var(--cor-primaria);
+    background: var(--cor-primaria);
     padding: 20px 20px 10px 20px;
     color: var(--cor-terciaria);
-    text-align: center;
+    text-align: center;   
 }
-p ~ .paragrafo-de-artigo {
+article p:first-of-type {                    /*.paragrafo-de-artigo:only of type border-radius: 20px 0 20px 0;*/
+        border-radius: 20px 20px 0 0;       /*.paragrafo-de-artigo:last of type    "     "     0    0 20px 0;*/
+                                            /*.paragrafo-de-artigo: :first-of-type "     "     20px 0  0   0;*/
+}
+    p:last-of-type {
+        border-radius: 0px 0 20px 20px;
+    }
+
+
+    p ~ .paragrafo-de-artigo {              
     padding-top: 0;
 }
 
@@ -71,7 +80,7 @@ article {
 } 
 .menu-principal ul {
     background-color:var(--cor-fundo);
-    list-style-type: georgian;
+    list-style-type:circle
 }
 
 .menu-principal li {
@@ -81,5 +90,3 @@ article {
 .menu-principal a {
     color: var(--cor-primaria)
 }
-
-(--!--espaço descentente, > filhos, + irmão adjacente. ~irmãos--)
