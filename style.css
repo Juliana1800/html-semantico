@@ -98,10 +98,9 @@ section#artigo {
    
     list-style-type:circle;
    display: flex;
-   justify-content: space-around;
-
-
-
+   justify-content: flex-end;
+   flex-direction: row;
+   align-items: center;
 }
 nav.menu-principal {
     height: 40px;
@@ -110,12 +109,17 @@ nav.menu-principal {
 
 .menu-principal li {
     color: var(--cor-fundo);
-    line-height: 40px;
+    line-height: 50px;
+   display: flex;
+   transition: all .35s;
 }
 
 .menu-principal a {
-    color: var(--cor-primaria);
+    color: var(--cor-fundo);
     font-family: var(--fonte-secundario);
-   
+    font-size: 120%;
+    padding: 0 10px;
 }
-
+.menu-principal li:hover {
+    background-color: var(--cor-quaternaria);
+}
