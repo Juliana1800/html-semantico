@@ -5,6 +5,9 @@
     --cor-quaternaria:#d8d2f9;
     --cor-fundo: #eeb6b6;
     --margem-paragrafos: 20px;
+    --font-primaria: "Times New Roman", sans-serif;
+    --fonte-secundario: Arial, Helvetica, sans-serif;
+
 }
 
 html {
@@ -14,6 +17,7 @@ body {
   margin: var(--margem-paragrafos);
     text-align: justify;
     background:var(--cor-fundo);
+    font-family: var(--font-primaria);
 
 }
 
@@ -24,13 +28,6 @@ body {
     font-size: 20pt;
     font-family: 'Courier New', Courier, monospace;
 }
-   .titulo-do-artigo {
-   color: var(--cor-primaria);
-    line-height: 2;
-    font-weight: bold;
-    font-size: 22pt;
-    font-family: Arial, Helvetica, sans-serif;
-   }
 
 .titulo-de-secao {
     color: var(--cor-secundaria);
@@ -40,6 +37,22 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+  
+article {
+    border: 10px dotted#0a0a0a;
+    padding: 30px;
+    margin: 30px 0;
+    border-radius: 20px 0 20px;
+    width: 25%;
+} 
+
+.titulo-do-artigo {
+color: var(--cor-primaria);
+ line-height: 2;
+ font-weight: bold;
+ font-size: 22pt;
+ font-family: Arial, Helvetica, sans-serif;
+}
 .subtitulo-de-artigo {
     color: var(--cor-terciaria);
     line-height: 2.0;
@@ -72,19 +85,21 @@ article p:first-of-type {                    /*.paragrafo-de-artigo:only of type
     p ~ .paragrafo-de-artigo {              
     padding-top: 0;
 }
+/*estilo dos artigo*/
 
-article {
-    border: 10px dotted#0a0a0a;
-    padding: 30px;
-    margin: 30px 0;
-    border-radius: 20px 0 20px;
-    width: 25%;
-} 
+section#artigo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+
 .menu-principal ul {
    
     list-style-type:circle;
    display: flex;
    justify-content: space-around;
+
 
 
 }
@@ -99,13 +114,8 @@ nav.menu-principal {
 }
 
 .menu-principal a {
-    color: var(--cor-primaria)
+    color: var(--cor-primaria);
+    font-family: var(--fonte-secundario);
    
 }
 
-section#artigo {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-  }
